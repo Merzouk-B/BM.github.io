@@ -1,0 +1,38 @@
+/* Grille */
+
+.grid {
+    display: grid;
+    grid-gap: 2vw ;
+}
+
+
+.grid--2
+.grid--3 
+.grid--4 
+.grid--6 {
+    grid-template-columns: repeat(1,1fr);
+}
+
+@media only screen and (min-width: 550px){
+  
+    
+    .grid--3{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+   
+}
+@media only screen and (min-width: 768px){
+  
+    .grid--3{
+        grid-template-columns: repeat(2,1fr); 
+    }
+   
+}
+@media only screen and (min-width: 1024px){
+
+    .grid--3{
+        grid-template-columns: repeat(3,1fr); 
+    }
+   
+}

@@ -1,0 +1,14 @@
+/* wrappers */
+
+.wrapper {
+    padding: 0 6vw;
+}
+.restaurants__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+}

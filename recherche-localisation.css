@@ -1,0 +1,43 @@
+.search__container{
+    text-align: center;
+}
+
+.search__input{
+    background-image: url("../../assets/loupe.svg");
+    background-position: 2% center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    box-shadow: 6px 6px 0 var(--black);
+    color: var(--black);
+    letter-spacing: 1px;
+    padding: calc(2 * var(--space-base));
+    padding-left: 3em;
+    width: calc(100% / 3);
+}
+
+.search__input:hover{ 
+    box-shadow: 3px 3px 0 var(--black);
+}
+
+.search__input:focus{
+    box-shadow: 0px 0px;
+}
+
+.search__map{
+    height: 400px;
+    width: 100%;
+}
+@media only screen and (min-width: 550px){
+    .search__input{
+        width: 100%;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    .search__input{
+        width: calc(100% / 3);
+    }
+
+}

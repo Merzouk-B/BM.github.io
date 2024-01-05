@@ -1,0 +1,101 @@
+/* Pour sections article de type texte-image */
+
+.article__content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.article__content:nth-child(even){
+    flex-direction: column;
+}
+
+.article__img-wrapper {
+   
+    width: calc(100%/2);
+}
+
+.text-center{
+    text-align: center;
+}
+.article__text-wrapper {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    width: calc(100% * 2/3);
+}
+
+.article__text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.article__img {
+    background-color: var(--light-gray);
+    padding-bottom: 100%;
+    width: 100%;
+    background-size: 100%;
+}
+
+.article__img-round {
+    border-radius: 50%;
+}
+
+.article a:not(.button) {
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* effet hover inspiré de ces exemples  https://css-tricks.com/css-link-hover-effects/ et https://www.sliderrevolution.com/resources/css-button-hover-effects/ */
+.article a:not(.button):hover{
+    background-image: linear-gradient(to top, var(--black) 50%, transparent 50%);
+    background-position: 0 100%;
+    background-size: 100% 200%;
+    color:white;
+    transition: background-position 400ms , color 400ms;
+    transition-timing-function: cubic-bezier(0.44, 0.21, 0, 1)
+}
+
+
+
+
+
+
+.article__img-wrapper{
+    display: flex;
+    border-radius: 30px;
+    min-height: 22vw;
+    overflow: hidden;
+     width: 100%;  
+}
+
+
+.image-text{
+    object-fit: cover;
+}
+.image-text:hover,.grid-image:hover{
+    transform: scale(1.1);
+}
+
+img{
+    width: 100%;
+}
+
+.grid-image{
+    object-fit: cover;
+   
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+    .article__content{
+        flex-direction: row;
+    }
+   
+}
+
